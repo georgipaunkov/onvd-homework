@@ -1,0 +1,262 @@
+/* Georgi Paunkov 201178 */
+
+.about-me,
+.education,
+.skills,
+.contact {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background: url(img/bckg.png);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar li,
+a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    display: inline;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul {
+    margin-right: 5rem;
+}
+
+.navbar a:hover {
+    color: #1bc949;
+    font-size: 20px;
+}
+
+.navbar {
+    background: url(img/nav-bar-bckg.webp);
+    border-radius: 35px;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+/*----------------Nav-Bar*----------------*/
+.about-me {
+    border: white 2px solid;
+    border-radius: 25px;
+    margin-top: 2rem;
+}
+
+.content-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.about-me-p {
+    width: 40%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-main {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+}
+
+.img-me {
+    text-align: center;
+}
+
+.georgiimg {
+    width: 300px;
+    height: 300px;
+}
+/*----------------About-Me----------------*/
+.education {
+    border: white 2px solid;
+    border-radius: 25px;
+    margin-top: 2rem;
+}
+
+.education h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.education ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education li:last-child {
+    width: 350px;
+    margin-right: 2rem;
+}
+
+.education li {
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.education img {
+    border-radius: 50%;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+}
+
+/*----------------Education----------------*/
+.skills {
+    border: white 2px solid;
+    border-radius: 25px;
+    margin-top: 2rem;
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.skills li {
+    list-style-type: none;
+}
+
+.skills ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.excellent {
+    color: #5eef00;
+}
+
+.very-good {
+    color: #8eff4d;
+}
+
+.good {
+    color: #ffc82d;
+}
+
+.fair {
+    color: #ffaa33;
+}
+
+/*----------------Skills----------------*/
+.contact {
+    border: white 2px solid;
+    border-radius: 25px;
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact a {
+    color: white;
+}
+
+.mail,
+.call {
+    display: flex;
+    align-items: center;
+}
+
+.mail img,
+.call img {
+    border-radius: 50%;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+/*----------------Contact----------------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url(img/nav-bar-bckg.webp);
+    margin: auto;
+    width: 80%;
+}
+
+.sticky+.about-me {
+    padding-top: 180px;
+}
+
+.about-me:hover,
+.education:hover,
+.skills:hover,
+.contact:hover {
+    border: 2px solid #C11F1F;
+
+
+}
+
+.georgiimg:hover {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 620px) {
+    .navbar {
+        display: none;
+    }
+    .sticky {
+        display: none;
+    }
+    .content-me,
+    .education ul,
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .skills ul{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me-p {
+        width: 100%;
+    }
+    .about-me{
+        padding-top:0;
+    }
+}

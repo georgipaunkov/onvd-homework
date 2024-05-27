@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>201178 - Georgi Paunkov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <img src="img/finki-logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="about-me" id="about-me">
+        <h1 class="title-main">About Me</h1>
+        <div class="content-me">
+            <div class="img-me">
+                <span class="name">Georgi Paunkov</span>
+                <br><br>
+                <img src="img/pictme.jpg" alt="" class="georgiimg">
+            </div>
+            <p class="about-me-p">
+                My name is Georgi Paunkov, and I am a student at the Faculty of Computer Science and Engineering in
+                Skopje.
+                I have a deep passion for computers and coding, which has driven me to immerse myself in the world of
+                technology. I enjoy exploring various programming languages, software development techniques, and
+                innovative
+                tech solutions. Problem-solving and continuous learning are what fuel my enthusiasm for this field.
+                <br><br>
+                In addition to my love for technology, I am also a car enthusiast. I find great joy in understanding the
+                complexities of automotive technology and how it intersects with computer science. Whether I'm coding a
+                new
+                application, studying for my exams, or keeping up with the latest advancements in the automotive
+                industry,
+                my curiosity and desire to expand my knowledge keep me motivated.
+                <br><br>
+                As I continue my studies and work on personal projects, I am excited about the future and the
+                contributions
+                I can make in the fields of computer science and engineering. My dual passions for technology and cars
+                drive
+                me to strive for excellence in everything I do.
+            </p>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <h1 class="title-main">My Education</h1>
+        <ul>
+            <li>
+                <img src="img/ooutpetarmusev-logo.png" alt="">
+                <h2>Primary School  "Petar Musev" - Bogdanci</h2>
+                <p>2007 - 2016</p>
+            </li>
+            <li>
+                <img src="img/soubogdanci-logo.png" alt="">
+                <h2>High School "Bogdanci" - Bogdanci</h2>
+                <p>2016 - 2020</p>
+            </li>
+            <li>
+                <img src="img/finki-logo.png" alt="">
+                <h2>Faculty of Computer Science and Engineering (FINKI) - Skopje</h2>
+                <p>2020 - Present</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="skills" id="skills">
+        <h1 class="title-main">Skills</h1>
+        <ul>
+
+            <li>
+                <h3>HTML/CSS - <span class="excellent">Excellent</span></h3>
+            </li>
+            <li>
+                <h3>C/C++ - <span class="very-good">Very Good</span></h3>
+            </li>
+            <li>
+                <h3>Javascript - <span class="good">Good</span></h3>
+            </li>
+            <li>
+                <h3>SQL - <span class="good">Good</span></h3>
+            </li>
+            <li>
+                <h3>Penetration Tester - <span class="fair">Fair</span></h3>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="title-main">Contact</h1>
+        <div class="contact-form">
+            <div class="mail">
+                <img src="img/mail.jpg" alt="" style="width: 30px;">
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+            <div class="call">
+                <img src="img/phone.jpg" alt="" style="width: 30px;">
+                <a href="tel:+38971111111">071-111-111</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
